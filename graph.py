@@ -40,7 +40,7 @@ thomson_stations = ["Woodlands North","Woodlands","Woodlands South","Springleaf"
 thomson_times = [3,2,2,2,2,2,2,2,3,2,2,2,2,2,4,2,3,2,4]
 
 interchanges = {
-    "Chinatown":["NE3", "DT19"], "Little India": ["NE6", "DT11"], "Bugis" : ["DT13", "EW12"], "Outram Park" : ["NE2", "EW16", "TE16"], "Tampines": ["DT32", "EW2"], "Jurong East": ["NS1", "EW24"], "Newton": ["NS21", "DT10"], "Dhoby Ghaut": ["NS23", "NE5", "CC1"], "City Hall": ["NS25", "EW13"], "Raffles Place": ["NS26", "EW14"], "Tanah Merah": ["EW4"], "Expo": ["DT35"], "Promenade": ["CC4", "DT14"], "Bayfront":["CE1", "DT15"], "Marina Bay": ["NS26","TE19"], "Paya Lebar": ["CC9", "EW8"], "MacPherson": ["CC10", "DT25"], "Serangoon":["NE11", "CC13"], "Bishan":["NS17", "CC15"], "Caldecott":["CC17","TE9"], "Botanic Gardens":["CC19", "DT8"], "Buona Vista":["CC22", "EW21"],"Harbour Front":["CC29", "NE1"],"Woodlands":["NS8","TE2"],"Stevens":["TE10","DT9"],"Orchard":["TE13","NS21"]
+    "Chinatown":["NE3", "DT19"], "Little India": ["NE6", "DT11"], "Bugis" : ["DT13", "EW12"], "Outram Park" : ["NE2", "EW16", "TE16"], "Tampines": ["DT31", "EW2"], "Jurong East": ["NS1", "EW24"], "Newton": ["NS20", "DT10"], "Dhoby Ghaut": ["NS23", "NE5", "CC1"], "City Hall": ["NS24", "EW13"], "Raffles Place": ["NS25", "EW14"],"Promenade": ["CC4", "DT14"], "Bayfront":["CE1", "DT15"], "Marina Bay": ["NS26","TE19"], "Paya Lebar": ["CC9", "EW8"], "MacPherson": ["CC10", "DT25"], "Serangoon":["NE11", "CC13"], "Bishan":["NS16", "CC15"], "Caldecott":["CC17","TE9"], "Botanic Gardens":["CC19", "DT8"], "Buona Vista":["CC22", "EW21"],"Harbour Front":["CC29", "NE1"],"Woodlands":["NS8","TE2"],"Stevens":["TE10","DT9"],"Orchard":["TE13","NS21"]
 }
 
 def generate_station_codes(stations, line_prefix):
