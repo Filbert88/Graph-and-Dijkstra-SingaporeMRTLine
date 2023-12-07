@@ -11,6 +11,7 @@ The Singapore MRT Route Finder is a Python application designed to find the most
 - Considers interchange stations for route optimization.
 - User-friendly interface with clear instructions.
 - Option to view a list of all MRT stations sorted by line.
+- Graph visualization of the MRT network and the shortest path.
 
 ## How to Use
 1. **Clone/Download the Repository**: 
@@ -31,9 +32,23 @@ The Singapore MRT Route Finder is a Python application designed to find the most
    - Enter the name of the source MRT station.
    - Enter the name of the destination MRT station.
    - The program will display the most optimized path for your journey.
+   - If you wish to see the graph visualization of the route, the program will render it using Plotly.
 
 ## Requirements
 - Python 3
+- Plotly
+- NetworkX
+- SciPy
+
+To install the required Python libraries, run the following command :
+```
+pip install plotly networkx scipy
+```
 
 ## Room for Improvement
 This program only use a static data and only based on the newest map until December 2023, but it can be improved by using a real-time data for the singapore MRT provided by Singapore's transport authorities or third-party APIs that aggregate transport data.
+
+## Additional Notes
+- The graph visualization feature requires an internet connection to render maps in the browser using Plotly.
+- The graph visualization is **NOT** the same as the Singapore MRT map
+- Ensure you have the required libraries installed before running the program to avoid runtime errors.
