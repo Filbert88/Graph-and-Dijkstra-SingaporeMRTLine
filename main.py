@@ -1,5 +1,6 @@
 from datetime import datetime, time
 from graph import *
+from plot import *
 
 PEAK_HOURS = [(time(7, 00), time(9, 30)), (time(17, 00), time(20, 00))]
 OFF_PEAK_HOURS = [(time(9, 30), time(17, 00)), (time(20, 00), time(23, 59)), (time(0, 00), time(7, 00))]
@@ -17,6 +18,7 @@ def display_stations(station_codes):
         print(f"Line {line}:")
         for station in sorted(stations):
             print(f"  - {station}")
+        print()
 
 def validate_input(msg, valid_stations, interchange_codes):
     while True:
@@ -74,11 +76,15 @@ def main(graph, station_codes, interchange_codes):
     print("Welcome to the Singapore MRT Route Finder!")
     print("Let's find the most optimized route for your journey.\n")
     print("Enjoy your trip planning with us! ^.^")
+
     inputs = input("\nDo you want to see the list of the MRT stations (YES/NO): ")
-    while(inputs.lower() != "yes" and inputs.lower() != "no"):
+    if inputs.lower() == "yes":
+        display_stations(station_codes)
+
+    while inputs.lower() not in ["yes", "no"]:
         print("Invalid Input. Please Try again.")
         inputs = input("\nDo you want to see the list of the MRT stations (YES/NO): ")
-        if (inputs.lower() == "yes") :
+        if inputs.lower() == "yes":
             display_stations(station_codes)
 
     valid_stations = set(station_codes.keys())
@@ -105,6 +111,7 @@ def main(graph, station_codes, interchange_codes):
     if shortest_path == "Route Not Possible":
         return shortest_path
     
+    shortest_path_stations = []
     path_with_names = []
     for i, code in enumerate(shortest_path):
         station_name = None
@@ -118,6 +125,7 @@ def main(graph, station_codes, interchange_codes):
 
         if station_name:
             path_with_names.append(f"{station_name} ({code})")
+            shortest_path_stations.append(station_name)
 
         if i < len(shortest_path) - 1:
             next_code = shortest_path[i + 1]
@@ -128,8 +136,23 @@ def main(graph, station_codes, interchange_codes):
                 change_message = f"Changing Stations at {station_name} from {current_line} line to {next_line} line"
                 path_with_names.append(change_message)
 
-    return ' -> '.join(path_with_names)
+    return  ' -> '.join(path_with_names), shortest_path_stations
 
-shortest_path = main(graph, station_codes, interchanges)
+shortest_path,shortest_path_stations = main(graph, station_codes, interchanges)
 print("\nThe shortest path is:", shortest_path)
 print("\nThank you for using the Singapore MRT Route Finder. Have a great trip!")
+
+display = input("\nLast but not least, Do you want to view the visualization of the graph (YES/NO) ? ")
+
+if display.lower() == "yes":
+    plot_graph(shortest_path_stations)
+
+while display.lower() not in ["yes", "no"]:
+    print("Invalid Input. Please Try again.")
+    display = input("\nDo you want to view the visualization of the graph (YES/NO) ? ")
+    if display.lower() == "yes":
+        plot_graph(shortest_path_stations)
+    if display.lower() == "no":
+        break
+
+print("\nGoodbye!!!")
