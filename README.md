@@ -21,9 +21,8 @@ The Singapore MRT Route Finder is a Python application designed to find the most
    - Open your terminal or command prompt.
    - Navigate to the directory where the program is located.
    - Run the program using the command: 
-   
     ```
-        python main.py
+   python main.py
     ```
    
 3. **Using the Program**:
