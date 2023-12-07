@@ -23,6 +23,9 @@ def display_stations(station_codes):
 def validate_input(msg, valid_stations, interchange_codes):
     while True:
         station_name = input(msg).strip()
+        station_name_lower = station_name.lower()
+        station_name = next((name for name in valid_stations if name.lower() == station_name_lower), None)
+
         if station_name in valid_stations or station_name in interchange_codes:
             return station_name
         else:
@@ -74,7 +77,7 @@ def dijkstra(graph, start, end):
 
 def main(graph, station_codes, interchange_codes):
     print("Welcome to the Singapore MRT Route Finder!")
-    print("Let's find the most optimized route for your journey.\n")
+    print("Let's find the most optimized route for your journey.")
     print("Enjoy your trip planning with us! ^.^")
 
     inputs = input("\nDo you want to see the list of the MRT stations (YES/NO): ")

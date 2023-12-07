@@ -28,9 +28,9 @@ def plot_graph(shortest_path_edges):
         node_y.append(y)
         text.append(node)
 
-    edge_trace = go.Scatter(x=edge_x, y=edge_y, line=dict(width=0.5, color='#888'), mode='lines')
+    edge_trace = go.Scatter(x=edge_x, y=edge_y, line=dict(width=0.8, color='black'), mode='lines')
     node_trace = go.Scatter(x=node_x, y=node_y, mode='markers+text', text=text, textposition='top center',
-                            marker=dict(showscale=False, color='#888', size=5), hoverinfo='text')
+                            marker=dict(showscale=False, color='black', size=5), hoverinfo='text')
 
 
     shortest_path_edge_x = []
@@ -41,7 +41,7 @@ def plot_graph(shortest_path_edges):
         shortest_path_edge_x.extend([x0, x1, None])
         shortest_path_edge_y.extend([y0, y1, None])
 
-    shortest_path_trace = go.Scatter(x=shortest_path_edge_x, y=shortest_path_edge_y, line=dict(width=2, color='red'), mode='lines')
+    shortest_path_trace = go.Scatter(x=shortest_path_edge_x, y=shortest_path_edge_y, line=dict(width=2.5, color='red'), mode='lines')
 
     # Create the figure
     fig = go.Figure(data=[edge_trace, node_trace, shortest_path_trace],
