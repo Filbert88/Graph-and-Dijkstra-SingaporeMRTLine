@@ -1,7 +1,7 @@
 # Singapore MRT Route Finder
 
 ## Overview
-This is a project for developer's paper that title **"Efficient Route Mapping in the Singapore MRT Leveraging Graph Theory and Dijkstra's Algorithm"**. This program is implementing Graph and Dijkstra to find the most optimized route.
+This is a project for developer's paper that title **"Efficient Route Mapping in the Singapore MRT Leveraging Graph Theory and Dijkstra's Algorithm"**. This program is implementing Graph and Dijkstra Algorithm to find the most optimized route.
 
 ## Description
 The Singapore MRT Route Finder is a Python application designed to find the most optimized route between two MRT (Mass Rapid Transit) stations in Singapore. It considers interchange stations and peak/off-peak hours to suggest the quickest route for your journey. 
@@ -20,9 +20,9 @@ The Singapore MRT Route Finder is a Python application designed to find the most
    - Open your terminal or command prompt.
    - Navigate to the directory where the program is located.
    - Run the program using the command: 
-   ```
-   python main.py
-   ```
+    ```
+        python main.py
+    ```
    
 3. **Using the Program**:
    - Upon launching, you will be greeted with a welcome message.
