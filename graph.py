@@ -7,7 +7,7 @@ blue_stations = ["Bukit Panjang","Cashew", "Hillview", "Beauty World", "King Alb
 blue_times= [2,2,3,2,2,2,2,2,2,3,1,2,2,2,2,1,2,2,2,1,2,2,2,2,2,2,2,2,3,2,2,3,2]
 
 purple_stations = ["Punggol","Sengkang", "Buangkok", "Hougang", "Kovan", "Serangoon", "Woodleigh", "Potong Pasir", "Boon Keng", "Farrer Park", 
-"Little India", "Dhoby Ghout", "Clark Quay", "Chinatown", "Outram Park", "Harbour Front"]
+"Little India", "Dhoby Ghaut", "Clark Quay", "Chinatown", "Outram Park", "Harbour Front"]
 
 purple_times= [4,2,2,2,3,2,1,3,2,1,1,3,2,1,4]
 
