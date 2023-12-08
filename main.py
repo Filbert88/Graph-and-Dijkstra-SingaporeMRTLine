@@ -72,7 +72,7 @@ def dijkstra(graph, start, end):
     while current_node:
         path.append(current_node)
         current_node = shortest_paths[current_node][0]
-        
+
     return path[::-1]
 
 def main(graph, station_codes, interchange_codes):
@@ -113,7 +113,8 @@ def main(graph, station_codes, interchange_codes):
 
     if shortest_path == "Route Not Possible":
         return shortest_path
-    
+
+    total_times = 0
     shortest_path_stations = []
     path_with_names = []
     for i, code in enumerate(shortest_path):
@@ -132,6 +133,7 @@ def main(graph, station_codes, interchange_codes):
 
         if i < len(shortest_path) - 1:
             next_code = shortest_path[i + 1]
+            total_times += graph[code][next_code]
             current_line = ''.join(filter(str.isalpha, code))
             next_line = ''.join(filter(str.isalpha, next_code))
 
@@ -139,10 +141,11 @@ def main(graph, station_codes, interchange_codes):
                 change_message = f"Changing Stations at {station_name} from {current_line} line to {next_line} line"
                 path_with_names.append(change_message)
 
-    return  ' -> '.join(path_with_names), shortest_path_stations
+    return  ' -> '.join(path_with_names), shortest_path_stations, total_times
 
-shortest_path,shortest_path_stations = main(graph, station_codes, interchanges)
-print("\nThe shortest path is:", shortest_path)
+shortest_path,shortest_path_stations, total_times = main(graph, station_codes, interchanges)
+print("\nThe shortest path is :", shortest_path)
+print("Total travel time :", total_times, "minutes")
 print("\nThank you for using the Singapore MRT Route Finder. Have a great trip!")
 
 display = input("\nLast but not least, Do you want to view the visualization of the graph (YES/NO) ? ")
