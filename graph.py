@@ -4,12 +4,12 @@ blue_stations = ["Bukit Panjang","Cashew", "Hillview", "Beauty World", "King Alb
  "Jalan Besar", "Bendemeer", "Geylang Bahru", "Mattar", "MacPherson", "Ubi", "Kaki Bukit",
  "Bedok North", "Bedok Reservoir", "Tampines West", "Tampines", "Tampines East", "Upper Changi", "Expo"]
 
-blue_times= [2,2,3,2,2,2,2,2,2,3,1,2,2,2,2,1,2,2,2,1,2,2,2,2,2,2,2,2,3,2,2,3,2]
+blue_times= [2,2,2,2,2,3,3,3,3,4,2,3,3,3,2,3,4,2,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
 
 purple_stations = ["Punggol","Sengkang", "Buangkok", "Hougang", "Kovan", "Serangoon", "Woodleigh", "Potong Pasir", "Boon Keng", "Farrer Park", 
 "Little India", "Dhoby Ghaut", "Clark Quay", "Chinatown", "Outram Park", "Harbour Front"]
 
-purple_times= [4,2,2,2,3,2,1,3,2,1,1,3,2,1,4]
+purple_times= [4,2,2,2,2,3,3,2,2,2,4,2,2,3,4]
 
 green_stations = ["Tuas Link","Tuas West Road", "Tuas Crescent", "Gul Circle", "Joo Koon", 
 "Pioneer", "Boon Lay", "Lakeside", "Chinese Garden", "Jurong East", "Clementi", "Dover", "Buona Vista", 
@@ -17,15 +17,14 @@ green_stations = ["Tuas Link","Tuas West Road", "Tuas Crescent", "Gul Circle", "
 "City Hall", "Bugis", "Lavender", "Kallang", "Aljunied", "Paya Lebar", "Eunos", "Kembangan", 
 "Bedok", "Tanah Merah", "Simei", "Tampines", "Pasir Ris"]
 
-green_times= [3,4, 3, 3, 3, 3, 2, 3, 2, 5, 2, 3, 2, 3, 2, 3, 3, 2, 2, 2, 3, 2, 2, 3, 2, 3, 
-2, 2, 3, 3, 3, 3]
+green_times= [2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4, 2, 3, 2, 3, 2, 2, 3, 2, 2, 2, 2, 3, 2, 3, 2]
 
 red_stations= ["Jurong East","Bukit Batok", "Bukit Gombak", "Choa Chu Kang", "Yew Tee", "Kranji", 
 "Marsiling", "Woodlands", "Admiralty", "Sembawang", "Canberra" ,"Yishun", "Khatib", "Yio Chu Kang", "Ang Mo Kio", 
 "Bishan", "Braddell", "Toa Payoh", "Novena", "Newton", "Orchard", "Somerset", "Dhoby Ghaut", 
 "City Hall", "Raffles Place", "Marina Bay", "Marina South Pier"]
 
-red_times = [3,2, 3, 3, 4, 3, 2, 3, 3, 2, 2, 3, 5, 2, 3, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2]
+red_times = [3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 4, 2, 3, 2]
 
 circle_stations = ["Dhoby Ghaut","Bras Basah", "Esplanade", "Promenade", "Nicoll Highway", "Stadium", 
 "Mountbatten", "Dakota", "Paya Lebar", "MacPherson", "Tai Seng", "Bartley", "Serangoon", 
@@ -33,14 +32,14 @@ circle_stations = ["Dhoby Ghaut","Bras Basah", "Esplanade", "Promenade", "Nicoll
 "Buona Vista", "One-north", "Kent Ridge", "Haw Par Villa", "Pasir Pajang", "Labrador Park", 
 "Telok Blangah", "Harbour Front"]
 
-circle_times= [2,2,3,2,2,2,1,3,2,2,2,3,2,3,2,2,5,2,3,2,2,1,3,2,2,1,2]
+circle_times= [3,3,3,2,2,2,2,2,3,3,3,3,3,3,2,2,4,3,2,2,2,2,2,2,2,2,2]
 
 thomson_stations = ["Woodlands North","Woodlands","Woodlands South","Springleaf","Lentor","Mayflower","Bright Hill","Upper Thomson","Caldecott","Stevens","Napier","Orchard Boulevard","Orchard","Great World","Havelock","Outram Park","Maxwell","Shenton Way","Marina Bay","Gardens by the Bay"]
 
 thomson_times = [3,2,2,2,2,2,2,2,3,2,2,2,2,2,4,2,3,2,4]
 
 interchanges = {
-    "Chinatown":["NE3", "DT19"], "Little India": ["NE6", "DT11"], "Bugis" : ["DT13", "EW12"], "Outram Park" : ["NE2", "EW16", "TE16"], "Tampines": ["DT31", "EW2"], "Jurong East": ["NS1", "EW24"], "Newton": ["NS20", "DT10"], "Dhoby Ghaut": ["NS23", "NE5", "CC1"], "City Hall": ["NS24", "EW13"], "Raffles Place": ["NS25", "EW14"],"Promenade": ["CC4", "DT14"], "Bayfront":["CE1", "DT15"], "Marina Bay": ["NS26","TE19"], "Paya Lebar": ["CC9", "EW8"], "MacPherson": ["CC10", "DT25"], "Serangoon":["NE11", "CC13"], "Bishan":["NS16", "CC15"], "Caldecott":["CC17","TE9"], "Botanic Gardens":["CC19", "DT8"], "Buona Vista":["CC22", "EW21"],"Harbour Front":["CC29", "NE1"],"Woodlands":["NS8","TE2"],"Stevens":["TE10","DT9"],"Orchard":["TE13","NS21"]
+    "Chinatown":["NE3", "DT19"], "Little India": ["NE6", "DT11"], "Bugis" : ["DT13", "EW12"], "Outram Park" : ["NE2", "EW16", "TE16"], "Tampines": ["DT31", "EW2"], "Jurong East": ["NS1", "EW24"], "Newton": ["NS20", "DT10"], "Dhoby Ghaut": ["NS23", "NE5", "CC1"], "City Hall": ["NS24", "EW13"], "Raffles Place": ["NS25", "EW14"],"Promenade": ["CC4", "DT14"], "Bayfront":["CE1", "DT15"], "Marina Bay": ["NS26","TE19"], "Paya Lebar": ["CC9", "EW8"], "MacPherson": ["CC10", "DT25"], "Serangoon":["NE11", "CC13"], "Bishan":["NS16", "CC15"], "Caldecott":["CC17","TE9"], "Botanic Gardens":["CC18", "DT8"], "Buona Vista":["CC22", "EW21"],"Harbour Front":["CC29", "NE1"],"Woodlands":["NS8","TE2"],"Stevens":["TE10","DT9"],"Orchard":["TE13","NS21"]
 }
 
 def generate_station_codes(stations, line_prefix):
@@ -92,8 +91,8 @@ def build_graph(stations, times, graph, station_codes, interchange_codes):
                     graph[codes[i]] = {}
                 if codes[j] not in graph:
                     graph[codes[j]] = {}
-                graph[codes[i]][codes[j]] = 0.1  
-                graph[codes[j]][codes[i]] = 0.1
+                graph[codes[i]][codes[j]] = 3  # weight for transfer lines
+                graph[codes[j]][codes[i]] = 3
 
 graph = {}
 
