@@ -34,10 +34,10 @@ The Singapore MRT Route Finder is a Python application designed to find the most
    - If you wish to see the graph visualization of the route, the program will render it using Plotly.
 
 ## Requirements
-- Python 3
-- Plotly
-- NetworkX
-- SciPy
+- Python 3.7 or above
+- Plotly for visualization
+- NetworkX for graph-based modeling
+- SciPy for technical computing task
 
 To install the required Python libraries, run the following command :
 ```
