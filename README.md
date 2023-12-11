@@ -1,4 +1,14 @@
-# Singapore MRT Route Finder
+<h1 align="center"> Efficient Route Mapping in the Singapore MRT Leveraging Graph Theory and Dijkstra's Algorithm</h1>
+<h1 align="center"> Filbert - 13522021 </h1>
+
+## Table of Contents
+* [Overview](#Overview)
+* [Description](#Description)
+* [Features](#Features)
+* [How to use](#How-to-use)
+* [Requirements](#Requirements)
+* [Room for Improvement](#Room-for-Improvement)
+* [Additional Notes](#Additional-Notes)
 
 ## Overview
 This is a project for developer's paper that title **"Efficient Route Mapping in the Singapore MRT Leveraging Graph Theory and Dijkstra's Algorithm"**. This program is implementing Graph and Dijkstra Algorithm to find the most optimized route.
